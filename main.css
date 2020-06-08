@@ -3,7 +3,7 @@
 }
 
 body {
-    background-color: red;
+    background-color: #2c3e50;
     color: white;
     margin: 0;
 }
@@ -14,14 +14,84 @@ body {
     grid-template-rows: repeat(6, minmax(0, auto));
 }
 
+/* header Grid and its styles */
 header {
     grid-row: 1/2;
     grid-column: 1/13;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    background-color: #213344;
+    padding: 10px;
 }
 
+header h1 {
+    grid-column: 6/8;
+    text-transform: uppercase;
+    margin: 0;
+    color: #f1c40f;
+}
+
+header small {
+    grid-column: 9/10;
+}
+
+header button {
+    grid-column: 10/11;
+    padding: 3px;
+    background-color: #f1c40f;
+    color: white;
+    border: none;
+    font-weight: bold;
+}
+
+/* nav Grid and its styles */
 nav {
     grid-row: 2/3;
     grid-column: 1/13;
+    display: grid;
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+    padding: 10px;
+}
+
+nav ul {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    margin: 0;
+    padding: 5px;
+}
+
+nav ul li {
+    list-style-type: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.active {
+    color: #f1c40f;
+}
+
+nav li.home {
+    grid-column: 4/5;
+}
+
+nav li.room {
+    grid-column: 5/6;
+}
+
+nav li.about {
+    grid-column: 6/7;
+}
+
+nav li.facilities {
+    grid-column: 7/8;
+}
+
+nav li.contact {
+    grid-column: 8/9;
 }
 
 #banner {
