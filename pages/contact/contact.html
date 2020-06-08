@@ -8,14 +8,15 @@
     <!-- git https://github.com/Haybuka/Hotel_Itoju.git -->
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="contact.css">
 </head>
 
 <body>
     <div id="container">
         <header>
             <h1>itoju</h1>
-            <small>i</small>
+            <p><i class="fas fa-user"></i></p>
             <button class="btn btn-white">Book now</button>
         </header>
         <nav>
@@ -27,115 +28,33 @@
                 <li class="contact"><a href="#">Contact</a></li>
             </ul>
         </nav>
-        <div id="banner">
-            <img src="images/bed.JPG" alt="hotel Image,Okay...Banana">
-            <div id="selection">
-                <div id="space">
-                    <small>Space Type</small>
-                    <select name="suite" id="suites">
-                        <option value="Masters Suite">Masters Suite</option>
-                        <option value="Normal">Normal</option>
-                    </select>
-                </div>
-                <div id="meal">
-                    <small>Meal Type</small>
-                    <select name="MealType" id="meals">
-                        <option value="Continental">Continental</option>
-                        <option value="Local">Local</option>
-                    </select>
-                </div>
-                <div id="guest">
-                    <small>Guest Number</small>
-                    <select name="guestNum" id="guests">
-                        <option value="one">1</option>
-                        <option value="two">2</option>
-                    </select>
-                </div>
-                <button>
-                    Find Rooms
-                </button>
-            </div>
+        <main>
+            image goes here
+        </main>
+        <div id="contact">
+            <article>
+                <h3>Contact Us</h3>
+                <p class="txt">How would you like to contact us?,by email here</p>
+                <h2>hello.itoju@gmail.com</h2>
+                <p class="fill">or fill this form</p>
+                <form action="">
+                    <label for="">
+                        <p>Full Name</p>
+                        <input type="text" id="name" placeholder="Enter your name">
+                    </label>
+                    <label for="">
+                        <p>Email Address</p>
+                        <input type="email" id="mail" placeholder="Enter your Mail">
+                    </label>
+                    <label for="">
+                        <p>Your Message</p>
+                        <textarea name="text" id="message" cols="40" rows="10" placeholder="message"></textarea>
+                    </label>
+                </form>
+                <button>Submit</button>
+            </article>
         </div>
-        <ul id="roomTypes">
-            <li class="delux"><a href="#">Deluxe Room</a></li>
-            <li class="junior"><a href="#" class="activeroom">Junior Room</a></li>
-            <li class="exec"><a href="#">Executive Room</a></li>
-            <li class="balcony"><a href="#">Balcony Room</a></li>
-        </ul>
-        <section>
-            <article id="first">
-                <img src="images/bedsm.jpg" alt="bedMini">
-                <h3>Golden Tulipe</h3>
-                <i>5 stars</i>
-                <ul>
-                    <li>Free wifi</li>
-                    <li>2 Guests</li>
-                    <li>Indoor Pool</li>
-                </ul>
-                <button>Book Now</button>
-                <p>N20,000</p>
-            </article>
-            <article id="second">
-                <img src="images/bedsm.jpg" alt="bedMini">
-                <h3>Golden Tulipe</h3>
-                <i>5 stars</i>
-                <ul>
-                    <li>Free wifi</li>
-                    <li>2 Guests</li>
-                    <li>Indoor Pool</li>
-                </ul>
-                <button>Book Now</button>
-                <p>N20,000</p>
-            </article>
-            <article id="third">
-                <img src="images/bedsm.jpg" alt="bedMini">
-                <h3>Golden Tulipe</h3>
-                <i>5 stars</i>
-                <ul>
-                    <li>Free wifi</li>
-                    <li>2 Guests</li>
-                    <li>Indoor Pool</li>
-                </ul>
-                <button>Book Now</button>
-                <p>N20,000</p>
-            </article>
-            <article id="fourth">
-                <img src="images/bedsm.jpg" alt="bedMini">
-                <h3>Golden Tulipe</h3>
-                <i>5 stars</i>
-                <ul>
-                    <li>Free wifi</li>
-                    <li>2 Guests</li>
-                    <li>Indoor Pool</li>
-                </ul>
-                <button>Book Now</button>
-                <p>N20,000</p>
-            </article>
-            <article id="fifth">
-                <img src="images/bedsm.jpg" alt="bedMini">
-                <h3>Golden Tulipe</h3>
-                <i>5 stars</i>
-                <ul>
-                    <li>Free wifi</li>
-                    <li>2 Guests</li>
-                    <li>Indoor Pool</li>
-                </ul>
-                <button>Book Now</button>
-                <p>N20,000</p>
-            </article>
-            <article id="sixth">
-                <img src="images/bedsm.jpg" alt="bedMini">
-                <h3>Golden Tulipe</h3>
-                <i>5 stars</i>
-                <ul>
-                    <li>Free wifi</li>
-                    <li>2 Guests</li>
-                    <li>Indoor Pool</li>
-                </ul>
-                <button>Book Now</button>
-                <p>N20,000</p>
-            </article>
-        </section>
+
         <footer>
             <div id="address">
                 <h3>ITOJU</h3>
@@ -172,7 +91,7 @@
                 </ul>
             </div>
             <div id="arrowup">
-                <p>up</p>
+                <p><a href="#top"><i class="fas fa-arrow-up"></i></a></p>
             </div>
             <div id="base">
                 <p>2019 &copy; ITOJU. All rights reserved</p>
