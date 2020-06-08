@@ -3,8 +3,8 @@
 }
 
 body {
-    background-color: #2c3e50;
-    color: white;
+    background-color: #fff;
+    color: #000;
     margin: 0;
 }
 
@@ -20,7 +20,7 @@ header {
     grid-column: 1/13;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    background-color: #213344;
+    background-color: #15212c;
     padding: 10px;
 }
 
@@ -52,6 +52,7 @@ nav {
     border-top: 1px solid grey;
     border-bottom: 1px solid grey;
     padding: 10px;
+    background-color: #213344;
 }
 
 nav ul {
@@ -100,6 +101,7 @@ nav li.contact {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(2, minmax(0, auto));
+    position: relative;
 }
 
 #banner img {
@@ -116,7 +118,15 @@ nav li.contact {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     top: -70px;
+    height: 0;
 }
+
+#banner #selection:after {
+    clear: both;
+    display: block;
+    content: "";
+}
+
 
 #selection small {
     display: block;
@@ -174,7 +184,49 @@ nav li.contact {
 ul#roomTypes {
     grid-row: 4/5;
     grid-column: 1/13;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    padding: 15px;
+    margin: 0;
+    grid-gap: 5px;
+    color: #000;
 }
+
+.activeroom {
+    color: #f1c40f;
+    text-decoration: underline;
+    text-decoration-style: unset;
+}
+
+ul#roomTypes li {
+    list-style-type: none;
+}
+
+li a {
+    text-decoration: none;
+    color: #000;
+}
+
+ul#roomTypes li.delux {
+    grid-column: 4/5;
+    grid-row: 1/2;
+}
+
+ul#roomTypes li.junior {
+    grid-column: 5/6;
+    grid-row: 1/2;
+}
+
+ul#roomTypes li.exec {
+    grid-column: 7/10;
+    grid-row: 1/2;
+}
+
+ul#roomTypes li.balcony {
+    grid-column: 6/7;
+    grid-row: 1/2;
+}
+
 
 section {
     grid-row: 5/6;
